@@ -29,22 +29,185 @@
         });
 
     </script>
+
+    <style>
+
+        .one{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            animation: gira 3s ;
+        }
+
+        .two{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            height: 100px;
+            background-color: brown;
+            animation: moverOne infinite 5s ;
+        }
+
+        .thre{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            animation: golpeoOne 5s ;
+        }
+
+        .four{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            animation: golpeotwo 5s ;
+        }
+
+        .five{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            transition: width 2s linear 1s height 5s borde;
+        }
+
+        .five:hover{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            border-radius:60%; 
+            align-items: center;
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            transition: width 2s linear, 1s height 5s ease,background-color 3s ease-in , border-radius 2s ease;
+        }
+
+        .six{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            left:200px;
+            top:0px;
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            animation: inf infinite 5s ;
+        }
+
+        .seven{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            left:200px;
+            top:0px;
+            width: 100px;
+            height: 100px;
+            background-color: violet;
+            animation: max infinite 5s ;
+        }
+
+        .fecha{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: blue;
+            animation: fecha infinite 5s ;
+        }
+
+        @keyframes gira{
+            0% {-webkit-transform: rotate(0deg); background-color: crimson;}
+            50% { -webkit-transform: rotate(180deg); background-color: yellow;}
+            100% {-webkit-transform: rotate(360deg); background-color: blue;}
+        }
+
+        @keyframes moverOne {
+            0%   {left:0px; top:0px; color: aliceblue; font-size: 20px;}
+            25%  {left:100px; top:0px; color: yellow; font-size: 50px;}
+            50%  {left:200px; top:0px; color: chartreuse; font-size: 30px;}
+            75%  {left:100px; top:0px; color: limegreen; font-size: 50px;}
+            100% {left:0px; top:0px; color: red; font-size: 20px;}
+        }
+
+        @keyframes golpeoOne {
+            0%   {left:0px; top:0px;}
+            25%  {left:100px; top:0px; width: 200px; height: 100px; background-color: red;}
+            50%  {left:200px; top:0px; width: 300px; height: 300px; background-color: orange;}
+            75%  {left:100px; top:0px; }
+            100% {left:0px; top:0px;}
+        }
+
+        @keyframes golpeotwo {
+            0%   {left:200px; top:0px; background-color: brown;}
+            25%  {left:100px; top:0px; width: 25px; height: 25px; background-color: black;}
+            50%  {left:0px; top:0px; -webkit-transform: rotate(360deg); width: 50px; height: 50px; background-color: white;}
+            75%  {left:100px; top:0px; width: 25px; height: 25px; background-color: green;}
+            100% {left:0px; top:0px; width: 100px; height: 100px; background-color: blue;}
+        }
+
+        @keyframes inf{
+            0%   {left:200px; top:0px;}
+            10%  {left:150px; top:-50px; background-color: rgb(0, 255, 200);}
+            20%  {left:100px; top:-50px; background-color: rgb(98, 0, 255);}
+            30%  {left:50px; top:-50px; }
+            40% {left:0px; top:0px;}
+            50% {left:0px; top:0px;}
+            60%  {left:50px; top:50px; }
+            70%  {left:100px; top:50px; background-color: rgb(98, 0, 255);}
+            80%  {left:150px; top:50px; background-color: rgb(0, 255, 200);}
+            90%   {left:200px; top:0px;}
+        }
+
+        @keyframes max {
+            0%   {right:10%; left:10%; top:10%; bottom:10%;}
+            25%  {right:50%; left:50%; top:50%; bottom:50%;}
+            50%  {right:100%; left:100%; top:100; bottom:100%;}
+            75%  {right:-50%; left:-50%; top:-50%; bottom:-50%;}
+            100% {right:10%; left:0px; top:0px; bottom:10%;}
+        }
+
+        @keyframes fecha {
+            0%   {font-size: 20px;}
+            25%  {font-size: 25px;}
+            50%  {-webkit-transform: rotate(360deg);}
+            75%  {font-size: 25px;}
+            100% {font-size: 20px;}
+        }
+    </style>
 </head>
 
 <body>
     <header></header>
     <main>
         <div class="nums">
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
-            <div>4</div>
-            <div>5</div>
-            <div>6</div>
-            <div>C</div>
+            <div class="one">1</div>
+            <div class="two">2</div>
+            <div class="thre">3</div>
+            <div class="four">4</div>
+            <div class="five">5</div>
+            <div class="six">6</div>
+            <div class="seven">C</div>
         </div>
         <div>
-            <div id="fecha">Fecha del sorteo: </div>
+            <div class="fecha" id="fecha">Fecha del sorteo: </div>
         </div>
     </main>
     <footer></footer>
